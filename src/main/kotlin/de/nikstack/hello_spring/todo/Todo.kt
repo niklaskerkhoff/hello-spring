@@ -1,6 +1,6 @@
 package de.nikstack.hello_spring.todo
 
-import de.nikstack.hello_spring.person.AppEntity
+import de.nikstack.hello_spring.AppEntity
 import de.nikstack.hello_spring.todo_tag.TodoTag
 import de.nikstack.hello_spring.todo_type.TodoType
 import jakarta.persistence.Entity

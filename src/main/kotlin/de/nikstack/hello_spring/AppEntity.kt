@@ -1,4 +1,4 @@
-package de.nikstack.hello_spring.person
+package de.nikstack.hello_spring
 
 import jakarta.persistence.*
 import org.springframework.data.annotation.CreatedBy
@@ -15,21 +15,21 @@ import java.util.*
 abstract class AppEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    val id: UUID? = null
+    open val id: UUID? = null
 
     @CreatedDate
-    var createdDate: LocalDateTime? = null
-        private set
+    open var createdDate: LocalDateTime? = null
+        protected set
 
     @LastModifiedDate
-    var lastModifiedDate: LocalDateTime? = null
-        private set
+    open var lastModifiedDate: LocalDateTime? = null
+        protected set
 
     @CreatedBy
-    var createdBy: String? = null
-        private set
+    open var createdBy: String? = null
+        protected set
 
     @LastModifiedBy
-    var lastModifiedBy: String? = null
-        private set
+    open var lastModifiedBy: String? = null
+        protected set
 }

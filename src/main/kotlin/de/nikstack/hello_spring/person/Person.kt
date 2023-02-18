@@ -1,5 +1,6 @@
 package de.nikstack.hello_spring.person
 
+import de.nikstack.hello_spring.AppEntity
 import de.nikstack.hello_spring.todo.Todo
 import jakarta.persistence.ElementCollection
 import jakarta.persistence.Embedded
